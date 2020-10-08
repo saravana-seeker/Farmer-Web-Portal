@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Farmer - Add New Product</title>
+  <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link type="text/css" rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<!--Nav Bar-->
+<nav class="navbar navbar-inverse" style="background:#a0d413;">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Farmer Gateway</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li ><a href="home.php">Home</a></li>
+        <li class="active"><a href="add_product.html">Add Product</a></li>
+        <li><a href="show_product.php">View Products</a></li>
+        <li class=""><a href="contact_form.html">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="sign_up.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="sign_in.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <li><a href="logout.php"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- partial:index.partial.html -->
+<div class="form">
+
+          <form action="add_product.php" method="post" enctype="multipart/form-data">
+                    <h1>Add New product</h1>
+          <div class="field-wrap">
+            <label>
+              Product Name<span class="req">*</span>
+            </label>
+            <input type="text" name = "product_name"required autocomplete="off"/>
+          </div>
+
+          <div class="field-wrap">
+            <label>
+              Quantity<span class="req">*</span>
+            </label>
+            <input type="text" name = "product_quantity" pattern="[0-9]{1,}" required autocomplete="off"/>
+          </div>
+          
+          <div class="field-wrap">
+            <label>
+              Price<span class="req">*</span>
+            </label>
+            <input type="text" name = "product_price" pattern="[0-9]{1,}" required autocomplete="off"/>
+          </div>
+          
+          <div class="field-wrap">
+              <input type='file' name="product_image" title="select image" />
+          </div>
+          
+         <div class="field-wrap">
+            <label>
+              Product Description<span class="req">*</span>
+            </label>
+            <textarea type="text" name = "product_desc" required autocomplete="off"></textarea>
+          </div>
+          
+          <button type="submit" class="button button-block"/>Upload Product</button>
+          
+          </form>
+
+ </div>
+ <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  type="text/javascript" src="script.js"></script>
+<!-- Footer -->
+ <!-- Footer Elements -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3" style="background:#a0d413;padding:1%;">
+    <h3>Created and Designed By Saravana</h3>© 2020 Copyright:
+    <a href="https://mdbootstrap.com/education/bootstrap/"> Farmer Gateway</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+</body>
+</html>

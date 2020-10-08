@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="Rajkumar, Smiley, udmnxpdu, GCE-Srirangam, gces rajkumar,royal rajkumar,prince rajkumar,contact rajkumar">
+<title>Contact | Smiley | Rajkumar</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round|Open+Sans">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+<style type="text/css">    
+    body {
+        color: #566787;
+        background: #f5f5f5;
+        font-family: "Open Sans", sans-serif;
+    }
+    .contact-form {
+        padding: 50px;
+        margin: 30px 0;
+    }
+    .contact-form h1 {
+        text-transform: uppercase;
+        margin: 0 0 15px;
+    }
+    .contact-form .form-control, .contact-form .btn  {
+        min-height: 38px;
+        border-radius: 2px;
+    }
+    .contact-form .btn-primary {
+        min-width: 150px;
+        background: #299be4;
+        border: none;
+    }
+    .contact-form .btn-primary:hover {
+        background: #33ff88; 
+    }
+    .contact-form label {
+        opacity: 0.9;
+    }
+    .contact-form textarea {
+        resize: vertical;
+    }
+    .hint-text {
+        font-size: 15px;
+        padding-bottom: 15px;
+        opacity: 0.8;
+    }
+    .bs-example {
+    	margin: 20px;
+    }
+</style>
+</head>
+<body>
+<!--Navbar -->
+<nav class="navbar navbar-inverse" style="background:#a0d413;">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Farmer Gateway</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class=""><a href="home.php">Home</a></li>
+        <li><a href="add_product.html">Add Product</a></li>
+        <li class=""><a href="show_product.php">View Products</a></li>
+        <li class="active"><a href="contact_form.html">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="sign_up.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="sign_in.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                <li><a href="logout.php"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+    <script type="text/javascript">  
+function validateEmail(){  
+var email=document.getElementById("email").value;  
+if(email.includes('@gmail')||email.includes('@yahoo')||email.includes('@outlook'))
+	return true;
+else 
+	alert('Enter Valid E-Mail Address');
+	return false;
+}  
+</script> 
+<div class="container">
+	<div class="row">
+		<div class="col-md-8 col-md-offset-2 m-auto">
+			<div class="contact-form">
+				<h1>Contact Us</h1>
+				<p class="hint-text">We'd love to hear from you, please drop us a line if you've any query.</p>
+				<form action="send_mail.php" method="post">
+							<div class="form-group">
+								<label for="inputFirstName">Name </label>
+								<input type="text" class="form-control" id="name" name="name" required>
+							</div>
+					<div class="form-group">
+						<label for="inputEmail">Email Address</label>
+						<input type="email" class="form-control" id="email" name="email" required>
+					</div>
+					<div class="form-group">
+						<label for="inputMessage">Message</label>
+						<textarea class="form-control" id="message" rows="5" name="message" required></textarea>
+					</div>
+					<input type="submit" class="btn btn-primary" value="Submit" onclick='return validateEmail()'>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+ <!-- Footer Elements -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3" style="background:#a0d413;padding:1%;">
+    <h3>Created and Designed By Saravana</h3>© 2020 Copyright:
+    <a href="https://mdbootstrap.com/education/bootstrap/"> Farmer Gateway</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+</body>
+</html>                            
